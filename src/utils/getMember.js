@@ -65,7 +65,7 @@ async function getMember(membershipType, membershipId) {
     }
     
   } catch (e) {
-    console.log(e)
+    console.log(e);
     return false;
   }
     

@@ -23,12 +23,12 @@ export const profileScrubber = (profile, sortBy = false) => {
   if (profile.characterProgressions && profile.characterProgressions.data) {
     let completed = false;
 
-    // Signal Light
-    Object.values(profile.characterProgressions.data).forEach(character => {
-      if (character.checklists[4178338182][844419501]) {
-        completed = true;
-      }
-    });
+    // Signal Light -- TODO: old
+    // Object.values(profile.characterProgressions.data).forEach(character => {
+    //   if (character.checklists[4178338182][844419501]) {
+    //     completed = true;
+    //   }
+    // });
     Object.values(profile.characterProgressions.data).forEach(character => {
       if (completed) {
         character.checklists[4178338182][844419501] = true;
@@ -36,11 +36,11 @@ export const profileScrubber = (profile, sortBy = false) => {
     });
     completed = false;
     //Not Even the Darkness
-    Object.values(profile.characterProgressions.data).forEach(character => {
-      if (character.checklists[4178338182][1942564430]) {
-        completed = true;
-      }
-    });
+    // Object.values(profile.characterProgressions.data).forEach(character => {
+    //   if (character.checklists[4178338182][1942564430]) {
+    //     completed = true;
+    //   }
+    // });
     Object.values(profile.characterProgressions.data).forEach(character => {
       if (completed) {
         character.checklists[4178338182][1942564430] = true;
