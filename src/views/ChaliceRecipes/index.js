@@ -159,7 +159,7 @@ class ChaliceRecipes extends React.Component {
     } else if (item.combo) {
       this.setState((prevState, props) => {
         let change = {
-          slots: {
+          slots: {  
             slot1: item.combo[0].length ? item.combo[0][0] : false,
             slot2: item.combo[1].length ? item.combo[1][0] : false,
             slot3: item.combo[2].length ? item.combo[2][0] : false
