@@ -149,7 +149,7 @@ class Pursuits extends React.Component {
         return 'items';
       }
   
-      return 'bounties';
+      return 'bounties'; // Bounties hash: 1784235469 
     });
 
     // console.log(constructed);
